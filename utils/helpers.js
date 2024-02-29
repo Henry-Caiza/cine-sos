@@ -63,16 +63,6 @@ export function findGenreByName(genres, name) {
     return genres.find(genre => genre.name === name);
 }
 
-export function findTypeMedia(arr) {
-    return arr.split('=')
-    // const match = arr.match(/search(\w+)/);
-    // if (match && match.length > 1) {
-    //     return match[1];
-    // } else {
-    //     return null;
-    // }
-}
-
 export const StarRating = ({ rating, className }) => {
     const numStars = 5;
     const stars = [];
