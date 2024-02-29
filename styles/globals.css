@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply h-full overflow-x-hidden;
+}
+
+#__next {
+  @apply h-full;
+}
+
+html {
+  @apply h-full;
+}
+
+
+.image-gallery-description {
+
+  font-size: 1.2rem;
+  font-weight: bolder;
+  left: 20px;
+  border-radius: 10px;
+
+}
+
+.image-gallery-thumbnails-wrapper {
+  position: absolute !important;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: #ddaff12f;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#fc6658ca, #bf133bca);
+  border-radius: 4px;
+}
+
+.container-card::-webkit-scrollbar {
+  height: 6px;
+}
+
+.container-card {
+  scrollbar-width: none;
+}
+
+.container-card::-webkit-scrollbar-track {
+  background: #ddaff12f;
+  border-radius: 4px;
+}
+
+.container-card::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #fc6658ca,
+      #bf133bca);
+  border-radius: 4px;
+}
+
+.image-gallery-thumbnail img {
+  border-radius: 0.5rem;
+}
+
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  border: 4px solid #fc6758 !important
+}
+
+.image-gallery-slide .image-gallery-image {
+  object-fit: cover !important;
+  object-position: top;
+}
+
+.image-gallery-slides,
+.image-gallery-slides img {
+  height: 24rem !important;
+  border-radius: 0px !important;
+}
+
+.image-gallery-thumbnails-wrapper {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+
+  .image-gallery-slides,
+  .image-gallery-slides img {
+    height: 32rem !important;
+  }
+
+  .image-gallery-thumbnails-wrapper {
+    display: block;
+  }
+}
+
+@media(hover: hover)and (pointer: fine) {
+  .image-gallery-thumbnail:hover {
+    outline: none;
+    border: 4px solid #fc6758 !important
+  }
+}
+
+
+@media(hover: hover)and (pointer: fine) {
+  .image-gallery-icon:hover {
+    color: #fc6758 !important
+  }
+
+}
+
+@media(hover: hover)and (pointer: fine) {
+  .image-gallery-bullets .image-gallery-bullet:hover {
+    background: #bf133c !important;
+    border: 1px solid #bf133c !important
+  }
+
+  .image-gallery-bullets .image-gallery-bullet.active:hover {
+    background: #bf133c !important
+  }
+}
