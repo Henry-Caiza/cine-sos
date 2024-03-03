@@ -70,7 +70,7 @@ function MoviesPage() {
                             {
                                 movies.length ? <>
                                     <LeftSlider dataLeftSlider={dataLeftSlider[3]} className='flex md:hidden h-28 w-full bg-radial-gradient-light-trending dark:bg-radial-gradient-dark-trending' />
-                                    <CardSlider data={moviesTrending?.slice(0, 10)} isWrap={true} haveLeftSlider={true} dataLeftSlider={dataLeftSlider[3]} title='' classNameCardSlider='-mt-8' classNameLeftSlider='bg-radial-gradient-light-trending dark:bg-radial-gradient-dark-trending' />
+                                    <CardSlider data={moviesTrending?.slice(0, 10)} isWrap={true} haveLeftSlider={true} dataLeftSlider={dataLeftSlider[3]} title='' classNameCardSlider='-mt-8' type_media='movie' classNameLeftSlider='bg-radial-gradient-light-trending dark:bg-radial-gradient-dark-trending' />
 
                                     <CardSlider title={`Upcoming Movies`} data={moviesUpcoming} type_media='movie' isWrap={true} classNameCardSlider='-mt-6 -mb-2 md:mt-0 md:mb-0' />
 
